@@ -104,7 +104,7 @@ namespace SystemKill{
                 var data = Process.GetProcesses();
                 kr.pro.MaxValue = data.Length;
                 int i = 0;
-                foreach (var p in data){try { if (p.ProcessName != "SystemKill") p.Kill(); kr.label1.Text = "Killing:" + p.ProcessName; kr.pro.Value = i; i++; await Task.Delay(100); } catch { }}
+                foreach (var p in data) { try { if (p.ProcessName != "SystemKill") p.Kill(); kr.label1.Text = "Killing:" + p.ProcessName; kr.pro.Value = i; i++; await Task.Delay(10); } catch { } }
                 Environment.Exit(0);
             };
             kr.ShowDialog();
