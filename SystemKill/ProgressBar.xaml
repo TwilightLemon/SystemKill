@@ -7,6 +7,6 @@
              mc:Ignorable="d" 
              d:DesignHeight="100" d:DesignWidth="300">
     <Grid>
-        <ProgressBar x:Name="pro" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF3399FF" BorderThickness="0"/>
+        <ProgressBar x:Name="pro" Background="#FF464B4F" BorderBrush="{x:Null}" Foreground="#FF3399FF" BorderThickness="0"/>
     </Grid>
 </UserControl>
